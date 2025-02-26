@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>อาหารอีสาน - Home</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="About/index.html">About</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Our Service
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="index.html">ส้มตำ</a>
+                        <a class="dropdown-item" href="larb/index.html">ลาบ</a>
+                        <a class="dropdown-item" href="Chicken/index.html">ไก่ย่าง</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="/contact/index.html">ร้านแนะนำ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">ติดต่อเรา</a></li>
+            </ul>
+            <!-- Social Icons -->
+            <div class="social-part">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </nav>
+    <h1>ติดต่อเรา</h1>
+    <p>กรุณากรอกข้อมูลเพื่อติดต่อเรา</p>
+    <form method="post" action='/index.html'>
+      <fieldset>
+        <label for="name">ชื่อของคุณ: <input id="name" name="name" type="text" required /></label>
+        <label for="email">อีเมลของคุณ: <input id="email" name="email" type="email" required /></label>
+        <label for="phone">เบอร์โทรศัพท์: <input id="phone" name="phone" type="tel" required /></label>
+      </fieldset>
+      <fieldset>
+        <label for="subject">หัวข้อการติดต่อ:
+          <select id="subject" name="subject">
+            <option value="">(เลือกหัวข้อ)</option>
+            <option value="order">สอบถามเกี่ยวกับการสั่งซื้อ</option>
+            <option value="service">สอบถามเกี่ยวกับบริการ</option>
+            <option value="feedback">แสดงความคิดเห็น</option>
+            <option value="other">อื่น ๆ</option>
+          </select>
+        </label>
+        <label for="message">ข้อความของคุณ:
+          <textarea id="message" name="message" rows="5" cols="30" placeholder="พิมพ์ข้อความของคุณที่นี่..."></textarea>
+        </label>
+      </fieldset>
+      <label for="consent">
+        <input id="consent" type="checkbox" required name="consent" /> ฉันยินยอมให้ใช้ข้อมูลนี้เพื่อติดต่อกลับ
+      </label>
+      <input type="submit" value="ส่งข้อความ" />
+    </form>
+    <!-- Footer -->
+    <footer class="text-center mt-5">
+        <p>&copy; 2025 อาหารอีสาน. ทุกสิทธิ์สงวน.</p>
+        <div class="social-part">
+            <i class="fa-brands fa-facebook fa-lg mr-2"></i>
+            <i class="fa-brands fa-twitter fa-lg mr-2"></i>
+            <i class="fa-brands fa-instagram fa-lg"></i>
+        </div>
+    </footer>
+
+    <!-- jQuery และ Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
